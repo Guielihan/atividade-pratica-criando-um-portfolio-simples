@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Guilherme Queiroz</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    h2 {
+      color: #9be7ff;
+      margin-top: 28px; 
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fx" aria-hidden="true">
+    <div class="mouse-light"></div>
+    <div class="sparkles"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span>Meu Portfólio</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="sobre">
+      <h1 style="color: #f9f871;">Guilherme Queiroz</h1>
+
+      <p style="font-size: 18px; color: #d7e9ff;">
+        Eu sou um garoto curioso, criativo e focado em evoluir. Gosto de construir coisas bonitas e funcionais — e quando dá pra colocar um brilho neon, melhor ainda kkk'.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#projetos">Ver projetos</a>
+        <a class="btn ghost" href="#contato">Falar comigo</a>
+      </div>
+
+      <div class="cards">
+        <article class="card bio">
+          <h2>Quem eu sou</h2>
+          <p>
+            Estudante e entusiasta de tecnologia. Estou treinando HTML, CSS e JavaScript
+            para criar interfaces responsivas, acessíveis e com identidade visual.
+          </p>
+          <p>
+            Meu estilo: direto, bonito e com detalhes.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Objetivo</h2>
+          <p>
+            Montar um portfólio simples, mas com presença — usando seletores, classes,
+            unidades, fontes do Google e com um pouco de toque de animação.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <h2>Habilidades</h2>
+
+      <ul class="skills">
+        <li class="skill skill--html" id="skill-html">
+          <span class="badge">HTML</span>
+          Estrutura semântica e organizada
+        </li>
+
+        <li class="skill skill--css" id="skill-css">
+          <span class="badge">CSS</span>
+          Estilos, responsividade, animações e hover
+        </li>
+
+        <li class="skill skill--js" id="skill-js">
+          <span class="badge">JavaScript</span>
+          Interações, efeitos com mouse e comportamento de interface
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="projetos">
+      <h2>Projetos</h2>
+
+      <div class="projects">
+        <article class="project">
+          <h3>Projeto 01</h3>
+          <p>Uma página simples com foco em layout e responsividade.</p>
+          <a class="link" href="#" target="_blank" rel="noopener noreferrer">Abrir</a>
+        </article>
+
+        <article class="project">
+          <h3>Projeto 02</h3>
+          <p>Um mini site com navegação, cards e efeitos visuais.</p>
+          <a class="link" href="#" target="_blank" rel="noopener noreferrer">Abrir</a>
+        </article>
+
+        <article class="project">
+          <h3>Projeto 03</h3>
+          <p>Interações com JavaScript: 'luz' seguindo o mouse.</p>
+          <a class="link" href="#" target="_blank" rel="noopener noreferrer">Abrir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <h2>Contato</h2>
+
+      <div class="contact">
+        <div class="card">
+          <p><strong>Email:</strong> guilhermemuniz4321@gmail.com</p>
+          <p><strong>Discord:</strong> Guielihan</p>
+          <p><strong>Cidade:</strong> Fortaleza</p>
+        </div>
+
+        <form class="card form" onsubmit="return false;">
+          <label>
+            Seu nome
+            <input type="text" placeholder="Digite seu nome..." />
+          </label>
+
+          <label>
+            Mensagem
+            <textarea rows="4" placeholder="Escreva sua mensagem..."></textarea>
+          </label>
+
+          <button class="btn primary" type="button" id="btnToast">Enviar</button>
+          <small class="hint">*somente demonstração (não há backend).</small>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="mini">© <span id="year"></span> — Guilherme Queiroz (Guielihan)</p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    mensagem enviada (só que não kkkk).
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
